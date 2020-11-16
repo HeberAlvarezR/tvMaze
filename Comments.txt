@@ -13,6 +13,6 @@ La conexión a la API, ya se encuentra en funcionamiento, para poder añadir la 
 En cuanto a la sección de favoritos, habría guardado la información de la pantalla principal, para luego mandarla a la pantalla de "Favoritos" una vez que el usuario presionara el botón correspondiente. 
 
 ## Agradecimientos.
-Esta es la segunda ocasión que intento hacer esta prueba, agradezco mucho que se me de la oportunidad. Aunque no he conseguido el objetivo, otra vez, he notado un avance personal y agradezco el reto que me han puesto. 
+Agradezco mucho que se me haya dado la oportunidad de presentar esta prueba. 
 
 
