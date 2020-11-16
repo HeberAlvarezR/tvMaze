@@ -1,0 +1,18 @@
+# tvMaze
+## Arquitectura utilizada: VIPER
+Se utilizó la arquitectura de VIPER, porque las conexiones a API, se aprecian con un mejor orden, una estructrua más sencilla de seguir y una forma más simple de leer el código cuando varias personas están trabajando sobre un mismo proyecto.
+
+## Partes del código que pueden ser mejoradas
+El código está incompleto, faltan las secciones del filtro de favoritos y la sección de detalles.
+
+## Dificultades
+El factor de tiempo fue una limitante, no precisamente porque considere que 3 días no son suficientes para elaborar este proyecto. Sin pretender hacer de este párrafo una excusa, sucede que justo en estos momentos estoy revisando mi proceso de titulación y últimas correcciones de tema de tesis, mis intenciones son obtener el título este año y para conseguirlo, debo entregar mi tesis totalmente corregida y revisada a más tardar el día 17 de noviembre de 2020.
+
+La conexión a la API, ya se encuentra en funcionamiento, para poder añadir la sección de detalles solo habría sido necesario modificar el endpoint correspondiente y agregar más variables al Entity para poder obtener los datos consumidos del servicio a la pantalla. 
+
+En cuanto a la sección de favoritos, habría guardado la información de la pantalla principal, para luego mandarla a la pantalla de "Favoritos" una vez que el usuario presionara el botón correspondiente. 
+
+## Agradecimientos.
+Esta es la segunda ocasión que intento hacer esta prueba, agradezco mucho que se me de la oportunidad. Aunque no he conseguido el objetivo, otra vez, he notado un avance personal y agradezco el reto que me han puesto. 
+
+
