@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="TVMaze" customModuleProvider="target">
+            <connections>
+                <outlet property="tvShowsTableView" destination="2tc-Bd-O3E" id="Gxh-mQ-fBX"/>
+                <outlet property="view" destination="iN0-l3-epB" id="YxH-NU-h9v"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2tc-Bd-O3E" customClass="TableViews" customModule="TVMaze" customModuleProvider="target">
+                    <rect key="frame" x="20" y="144" width="374" height="616"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hft-WS-tbl">
+                    <rect key="frame" x="0.0" y="776" width="414" height="120"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YU8-5V-h4t">
+                            <rect key="frame" x="0.0" y="0.0" width="207" height="120"/>
+                            <state key="normal" title="TV Shows"/>
+                            <connections>
+                                <action selector="tvShowsButton:" destination="-1" eventType="touchUpInside" id="Y5P-bc-4iz"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpq-EW-T3f">
+                            <rect key="frame" x="207" y="0.0" width="207" height="120"/>
+                            <state key="normal" title="Favoritos"/>
+                            <connections>
+                                <action selector="favouritesButton:" destination="-1" eventType="touchUpInside" id="npr-Zg-AeS"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="fpq-EW-T3f" firstAttribute="width" secondItem="hft-WS-tbl" secondAttribute="width" multiplier="0.5" id="Cqs-rW-g1V"/>
+                        <constraint firstAttribute="trailing" secondItem="fpq-EW-T3f" secondAttribute="trailing" id="Hop-Qy-9Cb"/>
+                        <constraint firstItem="YU8-5V-h4t" firstAttribute="width" secondItem="hft-WS-tbl" secondAttribute="width" multiplier="0.5" id="MWl-AG-LcK"/>
+                        <constraint firstItem="YU8-5V-h4t" firstAttribute="leading" secondItem="hft-WS-tbl" secondAttribute="leading" id="e5Y-R2-oWy"/>
+                        <constraint firstItem="YU8-5V-h4t" firstAttribute="height" secondItem="hft-WS-tbl" secondAttribute="height" id="jgH-VE-qLO"/>
+                        <constraint firstItem="fpq-EW-T3f" firstAttribute="height" secondItem="hft-WS-tbl" secondAttribute="height" id="kcx-VF-qUi"/>
+                        <constraint firstItem="YU8-5V-h4t" firstAttribute="centerY" secondItem="hft-WS-tbl" secondAttribute="centerY" id="kj7-h2-MEi"/>
+                        <constraint firstItem="fpq-EW-T3f" firstAttribute="centerY" secondItem="hft-WS-tbl" secondAttribute="centerY" id="myn-uI-c5h"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2tc-Bd-O3E" secondAttribute="trailing" constant="20" id="60Y-cY-wDX"/>
+                <constraint firstItem="hft-WS-tbl" firstAttribute="top" secondItem="2tc-Bd-O3E" secondAttribute="bottom" constant="16" id="HoV-1g-Cx8"/>
+                <constraint firstItem="hft-WS-tbl" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="JCz-Ws-ZTX"/>
+                <constraint firstAttribute="bottom" secondItem="hft-WS-tbl" secondAttribute="bottom" id="NOl-Hp-lGU"/>
+                <constraint firstItem="hft-WS-tbl" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="bottom" multiplier="0.9" id="SGB-6H-RNI"/>
+                <constraint firstItem="2tc-Bd-O3E" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="100" id="b6K-R3-BQs"/>
+                <constraint firstItem="hft-WS-tbl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fPA-Oi-Z2j"/>
+                <constraint firstItem="2tc-Bd-O3E" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="v6i-Mx-hX8"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="75.669642857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
